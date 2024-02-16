@@ -150,4 +150,15 @@ not result in efficient programs.
 
 
 ### 7. When we say that "X" language is object oriented programming language, then what does we mean by that ?
-If it is written interms of objects and classes. And it follows all the OOPS concepts 
+If it is written in terms of objects and classes. And it follows all the OOPS concepts 
+
+
+## Classes
+
+### 1. Difference between Structure and Class
+
+| Class  | Structure  |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
