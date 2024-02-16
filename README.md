@@ -166,15 +166,13 @@ If it is written in terms of objects and classes. And it follows all the OOPS co
 |5. It is normally used for data abstraction and further inheritance.|	5. It is normally used for the grouping of data|
 |6. NULL values are possible in Class.|	6. NULL values are not possible.|
  
-|Structure Syntax:  class class_name{
+|7. Structure Syntax:  class class_name{
                            data_member;
                            member_function;
-                  };
-|
-|Class Syntax: struct structure_name{
+                  };|
+|7. Class Syntax: struct structure_name{
                   type structure_member1;
                   type structure_member2;
-                  }; 
-|   
+                  }; |   
 
 
