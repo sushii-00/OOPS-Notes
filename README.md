@@ -30,10 +30,10 @@ You are familiar with OOP concept theoretically but if interviewer ask to tell t
 Basically why we are write coding ,to solve our real world problem right.
 In OOP a logic is right base on the object with this features
 
-* 1. abstraction
-* 2. encapsulation
-* 3. inheritance
-* 4. polymorphism
+*  abstraction
+*  encapsulation
+*  inheritance
+*  polymorphism
 
 There are a lot of Car,bike,ATM and coffee machine.and there brands and name also different.
 In OOP those are called object.
