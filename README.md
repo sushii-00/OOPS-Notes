@@ -157,9 +157,33 @@ If it is written in terms of objects and classes. And it follows all the OOPS co
 
 ###  1. Difference between Structure and Class
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Tables   |      Are      |  
+|----------|:-------------:|
+| 1. Members of a class are private by default.|	1. Members of a structure are public by default. |
+|2. An instance of a class is called an ‘object’.|	2. An instance of structure is called the ‘structure variable’.|
+|3. Member classes/structures of a class are private by default but not all programming languages have this default behavior eg Java etc.|	3. Member classes/structures of a structure are public by default.|
+|4. It is declared using the class keyword.|	4. It is declared using the struct keyword.|
+|5. It is normally used for data abstraction and further inheritance.|	5. It is normally used for the grouping of data|
+|6. NULL values are possible in Class.|	6. NULL values are not possible.|
+|7. Syntax:
+
+ class class_name{
+
+         data_member;
+
+         member_function;
+
+  };
+|
+|7. Syntax:
+
+   struct structure_name{
+
+         type structure_member1;
+
+         type structure_member2;
+
+   }; |
+   
+
 
