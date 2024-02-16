@@ -155,10 +155,11 @@ If it is written in terms of objects and classes. And it follows all the OOPS co
 
 ## Classes
 
-### 1. Difference between Structure and Class
+###  1. Difference between Structure and Class
 
-| Class  | Structure  |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
