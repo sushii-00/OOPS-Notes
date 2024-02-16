@@ -92,3 +92,12 @@ In our topic of OOPs concepts with real time examples, Polymorphism is an OOP fe
 Because derived objects and their parents have the same interface, the caller code can utilize any function in that class’ interface. Depending on the type of object supplied, the appropriate function will be invoked at run-time, resulting in potentially various behavior.
 
 > OOPs, Concepts With Real Time Examples: Assume we have an “Animal” class with two child classes named “Cat” and “Dog.” We can override the “makeNoise” function that is inherited by the subclasses “Cat” and “Dog” to be “meow” and “bark,” respectively if the Animal class contains a way to create a noise named “makeNoise.” Then, another function may be built that takes any Animal object as a parameter and calls the “makeNoise” member function on it. Depending on the type of animal object that was supplied to the function, the noise will be either a “meow” or a “bark.”
+
+
+### 3. Why to study OOPs ?
+
+1. Duplicate code is a Bad.
+
+2. Code will always be changed.
+
+So, above statement proves, OOPs is provides code reusability which reduce the duplication of code because once you have duplicate code, you have make changes everywhere which leads to performance. Code can be changed anytime or requirement of application changed anytime so when you want to make changes in your application, OOPs makes it easier.
