@@ -147,3 +147,7 @@ than procedural programs.
 to functional-programming style, logic-programming style, or procedure-based
 programming style, and applying object-oriented programming in those situations will
 not result in efficient programs. 
+
+
+### 7. When we say that "X" language is object oriented programming language, then what does we mean by that ?
+If it is written interms of objects and classes. And it follows all the OOPS concepts 
