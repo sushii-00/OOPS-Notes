@@ -495,7 +495,210 @@ When we make a class as friend, all its member functions automatically become fr
 ### 6. Constructors in C++
 Constructor in C++ is a special method that is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. It constructs the values i.e. provides data for the object which is why it is known as constructor.
 
-• Constructor is a member function of a class, whose name is same as the class name.
-• Constructor is a special type of member function that is used to initialize the data members for an object of a class automatically, when an object of the same class is created.
-• Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object that is why it is known as constructor.
-• Constructor do not return value, hence they do not have a return type.
+* Constructor is a member function of a class, whose name is same as the class name.
+
+* Constructor is a special type of member function that is used to initialize the data members for an object of a class automatically, when an object of the same class is created.
+
+* Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object that is why it is known as constructor.
+  
+* Constructor do not return value, hence they do not have a return type.
+
+```
+The prototype of the constructor looks like 
+    <class-name> (list-of-parameters);
+ 
+```
+**Constructor can be defined inside the class declaration or outside the class declaration**
+
+
+**Example: defining the constructor within the class**
+ ```
+#include<iostream>
+using namespace std;
+class student
+{
+    int rno;
+    char name[50];
+    double fee;
+    public:
+    student()
+    {
+        cout<<"Enter the RollNo:";
+        cin>>rno;
+        cout<<"Enter the Name:";
+        cin>>name;
+        cout<<"Enter the Fee:";    
+        cin>>fee;
+    }    
+     
+ 
+ 
+    void display()
+    {
+        cout<<endl<<rno<<"\t"<<name<<"\t"<<fee;
+    }
+};
+ 
+int main()
+{
+    student s;  //constructor gets called automatically when we create the object of the class
+    s.display();
+    return 0;
+ 
+}
+
+```
+
+
+**Example: defining the constructor outside the class**
+```
+#include<iostream>
+using namespace std;
+class student
+{
+    int rno;
+    char name[50];
+    double fee;
+    public:
+    student();
+    void display();
+     
+};
+ 
+    student::student()
+    {
+        cout<<"Enter the RollNo:";
+        cin>>rno;
+        cout<<"Enter the Name:";
+        cin>>name;
+        cout<<"Enter the Fee:";    
+        cin>>fee;
+    }    
+ 
+   void student::display()
+    {
+        cout<<endl<<rno<<"\t"<<name<<"\t"<<fee;
+    }
+     
+int main()
+{
+    student s;
+    s.display();
+    return 0;
+}
+
+```
+
+* **Characteristics of constructor**
+
+    * The name of the constructor is same as its class name.
+    * Constructors are mostly declared in the public section of the class though it can be declared in the private section of the class.
+    * Constructors do not return values; hence they do not have a return type.
+    * A constructor gets called automatically when we create the object of the class.
+    * Constructors can be overloaded.
+    * Constructor can not be declared virtual.
+    * Constructor cannot be inherited.
+    * Addresses of Constructor cannot be referred.
+    * Constructor make implicit calls to new and delete operators during memory allocation.
+
+* **Types of constructor**
+
+    * Default constructor
+    * Parameterized constructor
+    * Overloaded constructor
+    * Constructor with default value
+    * Copy constructor
+    * Inline constructor
+
+* **A constructor is different from normal functions in following ways:** 
+
+Constructor has same name as the class itself
+Default Constructors don’t have input argument however, Copy and Parameterized Constructors have input arguments
+Constructors don’t have return type
+A constructor is automatically called when an object is created.
+It must be placed in public section of class.
+If we do not specify a constructor, C++ compiler generates a default constructor for object (expects no parameters and has an empty body).
+
+**1. Default Constructors** : Default constructor is the constructor which doesn’t take any argument. It has no parameters. It is also called a zero-argument constructor.
+
+```
+  
+// Cpp program to illustrate the
+// concept of Constructors
+#include <iostream>
+using namespace std;
+ 
+class construct {
+public:
+    int a, b;
+ 
+    // Default Constructor
+    construct()
+    {
+        a = 10;
+        b = 20;
+    }
+};
+ 
+int main()
+{
+    // Default constructor called automatically
+    // when the object is created
+    construct c;
+    cout << "a: " << c.a << endl << "b: " << c.b;
+    return 1;
+}
+```
+
+> Output
+a: 10
+b: 20
+> Note: Even if we do not define any constructor explicitly, the compiler will automatically provide a default constructor implicitly.
+
+
+**2. Parameterized Constructors:** It is possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created. To create a parameterized constructor, simply add parameters to it the way you would to any other function. When you define the constructor’s body, use the parameters to initialize the object. 
+
+> Note: when the parameterized constructor is defined and no default constructor is defined explicitly, the compiler will not implicitly call the default constructor and hence creating a simple object as
+Student s; //Will flash an error
+
+```
+
+// CPP program to illustrate
+// parameterized constructors
+#include <iostream>
+using namespace std;
+ 
+class Point {
+private:
+    int x, y;
+ 
+public:
+    // Parameterized Constructor
+    Point(int x1, int y1)
+    {
+        x = x1;
+        y = y1;
+    }
+ 
+    int getX() { return x; }
+    int getY() { return y; }
+};
+ 
+int main()
+{
+    // Constructor called
+    Point p1(10, 15);
+ 
+    // Access values assigned by constructor
+    cout << "p1.x = " << p1.getX()
+         << ", p1.y = " << p1.getY();
+ 
+    return 0;
+}
+```
+
+> When an object is declared in a parameterized constructor, the initial values have to be passed as arguments to the constructor function. The normal way of object declaration may not work. The constructors can be called explicitly or implicitly.
+
+> Example e = Example(0, 50); // Explicit call
+  Example e(0, 50);           // Implicit call
+
