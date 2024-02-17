@@ -660,7 +660,7 @@ b: 20
 
 > Note: when the parameterized constructor is defined and no default constructor is defined explicitly, the compiler will not implicitly call the default constructor and hence creating a simple object as
 
-Student s; //Will flash an error
+> Student s; //Will flash an error
 
 ```
 
@@ -704,3 +704,10 @@ int main()
 
 > Example e(0, 50);           // Implicit call
 
+
+**3. Copy Constructor: **
+A copy constructor is a member function that initializes an object using another object of the same class. A detailed article on Copy Constructor.
+
+Whenever we define one or more non-default constructors( with parameters ) for a class, a default constructor( without parameters ) should also be explicitly defined as the compiler will not provide a default constructor in this case. However, it is not necessary but it’s considered to be the best practice to always define a default constructor. 
+
+Copy constructor takes a reference to an object of the same class as an argument.
