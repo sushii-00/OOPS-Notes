@@ -659,6 +659,7 @@ b: 20
 **2. Parameterized Constructors:** It is possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created. To create a parameterized constructor, simply add parameters to it the way you would to any other function. When you define the constructor’s body, use the parameters to initialize the object. 
 
 > Note: when the parameterized constructor is defined and no default constructor is defined explicitly, the compiler will not implicitly call the default constructor and hence creating a simple object as
+
 Student s; //Will flash an error
 
 ```
@@ -700,5 +701,6 @@ int main()
 > When an object is declared in a parameterized constructor, the initial values have to be passed as arguments to the constructor function. The normal way of object declaration may not work. The constructors can be called explicitly or implicitly.
 
 > Example e = Example(0, 50); // Explicit call
-  Example e(0, 50);           // Implicit call
+
+> Example e(0, 50);           // Implicit call
 
