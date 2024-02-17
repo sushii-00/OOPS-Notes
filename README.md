@@ -486,10 +486,16 @@ class WithFriend
     friend class Other;  
 };
 
+```
 When we make a class as friend, all its member functions automatically become friend functions.
 
 **Friend Functions is a reason, why C++ is not called as a pure Object Oriented language. Because it violates the concept of Encapsulation.**
 
 
+### 6. Constructors in C++
+Constructor in C++ is a special method that is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. It constructs the values i.e. provides data for the object which is why it is known as constructor.
 
-```
+• Constructor is a member function of a class, whose name is same as the class name.
+• Constructor is a special type of member function that is used to initialize the data members for an object of a class automatically, when an object of the same class is created.
+• Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object that is why it is known as constructor.
+• Constructor do not return value, hence they do not have a return type.
